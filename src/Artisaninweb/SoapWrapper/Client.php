@@ -2,7 +2,7 @@
 
 namespace Artisaninweb\SoapWrapper;
 
-use SoapClient;
+use \jamesiarmes\PhpNtlm\SoapClient;
 
 class Client extends SoapClient
 {
