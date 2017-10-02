@@ -1,7 +1,7 @@
 Laravel SoapClient Wrapper
 ===========================
 
-A SoapClient wrapper integration for Laravel.<br/>
+A SoapClient wrapper integration for Laravel, built on top of jamesiarmes/php-ntlm.<br/>
 Makes it easy to use Soap in a Laravel application.<br/>
 
 Please report any bugs or features here: <br/>
@@ -12,12 +12,12 @@ Installation
 
 ## Laravel
 
-Add `artisaninweb/laravel-soap` as requirement to composer.json
+Add `benyanke/laravel-ntlm-soap` as requirement to composer.json
 
 ```javascript
 {
     "require": {
-        "artisaninweb/laravel-soap": "0.3.*"
+        "benyanke/laravel-ntlm-soap": "0.1.*"
     }
 }
 ```
@@ -25,25 +25,25 @@ Add `artisaninweb/laravel-soap` as requirement to composer.json
 Add the service provider in `app/config/app.php`.
 
 ```php
-'Artisaninweb\SoapWrapper\ServiceProvider'
+'benyanke\SoapWrapper\ServiceProvider'
 ```
 
 To use the facade add this to the facades in `app/config/app.php`.
 
 ```php
-'SoapWrapper' => 'Artisaninweb\SoapWrapper\Facade'
+'SoapWrapper' => 'benyanke\SoapWrapper\Facade'
 ```
 
 ## Lumen
 
 Open `bootstrap/app.php` and register the required service provider:
 ```php
-$app->register(Artisaninweb\SoapWrapper\ServiceProvider::class);
+$app->register(benyanke\SoapWrapper\ServiceProvider::class);
 ```
 
 register class alias:
 ```php
-class_alias('Artisaninweb\SoapWrapper\Facade', 'SoapWrapper');
+class_alias('benyanke\SoapWrapper\Facade', 'SoapWrapper');
 ```
 
 *Facades must be enabled.*
@@ -59,7 +59,7 @@ How to add a service to the wrapper and use it.
 
 namespace App\Http\Controllers;
 
-use Artisaninweb\SoapWrapper\SoapWrapper;
+use benyanke\SoapWrapper\SoapWrapper;
 use App\Soap\Request\GetConversionAmount;
 use App\Soap\Response\GetConversionAmountResponse;
 
