@@ -1,6 +1,6 @@
 <?php
 
-namespace Artisaninweb\SoapWrapper;
+namespace benyanke\SoapWrapper;
 
 use \Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 

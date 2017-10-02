@@ -1,6 +1,6 @@
 <?php
 
-namespace Artisaninweb\SoapWrapper;
+namespace benyanke\SoapWrapper;
 
 class Facade extends \Illuminate\Support\Facades\Facade
 {

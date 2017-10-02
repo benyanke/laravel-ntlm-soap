@@ -1,6 +1,6 @@
 <?php
 
-namespace Artisaninweb\SoapWrapper;
+namespace benyanke\SoapWrapper;
 
 use SoapClient;
 use SoapHeader;

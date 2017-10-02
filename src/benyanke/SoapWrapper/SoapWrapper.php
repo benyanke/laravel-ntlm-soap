@@ -1,12 +1,12 @@
 <?php
 
-namespace Artisaninweb\SoapWrapper;
+namespace benyanke\SoapWrapper;
 
 use Closure;
 use SoapClient;
-use Artisaninweb\SoapWrapper\Exceptions\ServiceNotFound;
-use Artisaninweb\SoapWrapper\Exceptions\ServiceAlreadyExists;
-use Artisaninweb\SoapWrapper\Exceptions\ServiceMethodNotExists;
+use benyanke\SoapWrapper\Exceptions\ServiceNotFound;
+use benyanke\SoapWrapper\Exceptions\ServiceAlreadyExists;
+use benyanke\SoapWrapper\Exceptions\ServiceMethodNotExists;
 
 class SoapWrapper
 {
@@ -108,7 +108,7 @@ class SoapWrapper
 
             if (is_null($service->getClient())) {
                 $client = new Client($service->getWsdl(), $service->getOptions(), $service->getHeaders());
-              
+
                 $service->client($client);
             } else {
                 $client = $service->getClient();

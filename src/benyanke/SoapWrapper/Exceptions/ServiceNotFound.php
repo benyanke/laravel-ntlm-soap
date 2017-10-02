@@ -1,6 +1,6 @@
 <?php
 
-namespace Artisaninweb\SoapWrapper\Exceptions;
+namespace benyanke\SoapWrapper\Exceptions;
 
 use Exception;
 
