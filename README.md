@@ -5,7 +5,7 @@ A SoapClient wrapper integration for Laravel, built on top of jamesiarmes/php-nt
 Makes it easy to use Soap in a Laravel application.<br/>
 
 Please report any bugs or features here: <br/>
-https://github.com/artisaninweb/laravel-soap/issues/
+https://github.com/benyanke/laravel-ntlm-soap/issues/
 
 Installation
 ============
