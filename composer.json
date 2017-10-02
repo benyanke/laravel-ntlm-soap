@@ -1,21 +1,22 @@
 {
-    "name": "artisaninweb/laravel-soap",
-    "description": "A SoapClient wrapper integration for Laravel",
+    "name": "benyanke/laravel-ntlm-soap",
+    "description": "A SoapClient wrapper integration for Laravel with NTLM support",
     "keywords": ["laravel", "soap", "client", "wrapper"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Michael van de Rijt",
-            "email": "me@mvdrijt.com"
+            "name": "Ben Yanke",
+            "email": "ben@benyanke.com"
         }
     ],
     "require": {
         "php": ">=5.4.0",
-        "ext-soap": "*"
+        "ext-soap": "*",
+        "jamesiarmes/php-ntlm": "*"
     },
     "autoload": {
         "psr-0": {
-            "Artisaninweb\\SoapWrapper": "src/"
+            "benyanke\\SoapWrapper": "src/"
         }
     }
 }
